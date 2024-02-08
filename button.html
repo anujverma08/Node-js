@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Javascript</h2>
+    <p>event listne  bjubjmn r</p>
+    <p id="demo"> </p>
+
+    <button id= "mybtn">click me</button>
+    <script>
+        // function myfuntion(){
+        //     alert("Hello");
+        // }   
+
+
+        var x= document.getElementById("mybtn");
+        x.addEventListener("mouseover",function1);
+        x.addEventListener("click",function2);
+        x.addEventListener("mouseout",function3);
+
+        function function1(){
+            document.getElementById("demo").innerHTML += "mousepad over";
+        }
+
+
+        function function2(){
+            document.getElementById("demo").innerHTML += "click";
+        }
+        function function3(){
+            document.getElementById("demo").innerHTML += "mouseout";
+        }
+
+    </script>
+
+</body>
+
+</html>

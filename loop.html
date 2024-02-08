@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Javascript</h1>
+    <h2> looping an array</h2>
+
+    <p id= "demo"></p>
+
+    <script>
+        const fruit = ["Apple", "Banana", "Orange"];
+        let flen =fruit.length;
+
+        let text = "<ul>";
+        for( let i =0; i< flen;i++){
+            text += "<li>" + fruit[i] + "</li>";
+        }
+        text += "</ul>";
+
+        document.getElementById("demo").innerHTML = text;
+    </script>
+</body>
+</html>

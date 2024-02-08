@@ -1,0 +1,47 @@
+<!-- Create a code that implements arrays and function using form and submit the details to display in Tables -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Example</title>
+</head>
+<body>
+    <h2>
+        Form Example
+    </h2>
+    <form id = "myForm" onsubmit="return SubmitForm()">
+    <label form="name">Name: </label><br>
+     <input type = "text" id="name" name="name"><br>
+     <label form="age">Age</label><br>
+     <input type="text" id="age" name="age"><br><br>
+     <input type="submit" value="Submit">   
+</form>
+    <table id="myTable">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+
+        </tr>
+    </table>
+
+    
+    <script>
+        function SubmitForm(){
+            var name = document.getElementById("name").value;
+            var age = document.getElementById("age").value;
+            var data = [name, age];
+            var table = document.getElementById("myTable");
+            var row = table.insertRow();
+            for ( var i =0;i<data.length;i++){
+                var cell = row.insertCell(i);
+                cell.innerHTML = data[i];
+
+            }
+            return false;
+            
+        }
+    </script>
+</body>
+</html>

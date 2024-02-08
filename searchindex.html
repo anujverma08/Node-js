@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<p id = "demo"></p>
+<body>
+    <script>
+        const fruits = ["Apple","Orange","mango","grape"];
+        let pos = fruits.indexOf("mango") + 1;
+        fruits.sort();
+        document.getElementById("demo").innerHTML = "Mango is found in the positiion " + " "+ pos;
+
+        function myDisplayer(something) { 
+
+            deocument.getElementById("demo").innerHTML = something;
+
+        }
+
+        function myCalculator(num1,num2, myCallback) {
+            let sum = num1 + num2;
+            myCallback(sum)
+        }
+
+    </script>
+</body> 
+</html>

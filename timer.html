@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function waitAndshow(){
+            var systemdate = new Date()
+            document.getElementById("clock").innerHTML = systemdate.toLocaleTimeString()        
+        
+    }
+    setInterval(waitAndshow,100)
+    </script>
+    <h3> Updated time will show in every 1 s</h3>
+    <h3> The current time on your computer is :<br>
+    <span id = "clock"></span></h3>
+</body>
+</html>
